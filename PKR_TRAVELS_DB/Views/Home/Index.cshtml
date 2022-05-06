@@ -1,0 +1,21 @@
+﻿@model IEnumerable<PKR_TRAVELS_DB.BusInfo>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<body align ="center" style="background-color:pink">
+    <div>
+        <h1> BUS MANAGEMENT SYSTEM - </h1>
+    </div>
+    <div>
+        @foreach (var item in Model)
+        {
+            <h1>BusID:@item.Bus_ID</h1>
+            <h1>Boarding Point:@item.BoardingPoint</h1>
+            <h1>Travel Date:@item.TravelDate</h1>
+            <h1>Amount:@item.Amount</h1>
+            <h1>Rating:@item.Rating</h1>
+        }
+    </div>
+</body>
+
